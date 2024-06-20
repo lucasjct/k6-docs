@@ -2,6 +2,7 @@
 title: 'API load testing'
 head_title: 'Intro to API Load Testing: The k6 Guide'
 excerpt: 'Load testing APIs has many facets. This guide introduces you to performance testing and provides best practices to load test your APIs with k6.'
+canonicalUrl: https://grafana.com/blog/2024/01/30/api-load-testing/
 ---
 
 An API load test generally starts with small loads on isolated components.
@@ -67,12 +68,12 @@ Even if the test logic stays the same, its load might change.
 The test goal determines the test type, which in turn determines the test load.
 Consider the following test types, which correspond to different goals load profiles:
 
-- [Smoke test](/test-types/smoke-testing). Verify the system functions with minimal load.
-- [“Average” load test](/test-types/load-testing/). Discover how the system functions with typical traffic.
-- [Stress test](/test-types/stress-testing). Discover how the system functions with the load of peak traffic.
-- [Spike test](/test-types/spike-testing). Discover how the system functions with sudden and massive increases in traffic.
-- [Breakpoint test](/test-types/breakpoint-testing/). Progressively ramp traffic to discover system breaking points.
-- [Soak test](/test-types/soak-testing). Discover whether or when the system degrades under loads of longer duration.
+- [Smoke test](https://grafana.com/docs/k6/latest/testing-guides/test-types/smoke-testing/). Verify the system functions with minimal load.
+- [“Average” load test](https://grafana.com/docs/k6/latest/testing-guides/test-types/load-testing/). Discover how the system functions with typical traffic.
+- [Stress test](https://grafana.com/docs/k6/latest/testing-guides/test-types/stress-testing/). Discover how the system functions with the load of peak traffic.
+- [Spike test](https://grafana.com/docs/k6/latest/testing-guides/test-types/spike-testing/). Discover how the system functions with sudden and massive increases in traffic.
+- [Breakpoint test](https://grafana.com/docs/k6/latest/testing-guides/test-types/breakpoint-testing/). Progressively ramp traffic to discover system breaking points.
+- [Soak test](https://grafana.com/docs/k6/latest/testing-guides/test-types/soak-testing/). Discover whether or when the system degrades under loads of longer duration.
 
 The test types that you choose inform how you plan and structure your test.
 But each application, organization, and testing project differs.
@@ -389,7 +390,7 @@ For example, consider a JSON file with a list of user info such as:
 {
 	"users": [
 	  { "username": "lorem", "surname": "ipsum" },
-	  { "username": "dolorem", "surname": "ipsum" },
+	  { "username": "dolorem", "surname": "ipsum" }
 	]
 }
 ```
@@ -624,4 +625,3 @@ The list of extensions is long:
 - MLLP
 - NATS
 - and [more](https://k6.io/docs/extensions/get-started/explore/).
-

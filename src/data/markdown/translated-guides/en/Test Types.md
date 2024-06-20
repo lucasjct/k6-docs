@@ -4,4 +4,4 @@ excerpt: 'A series of conceptual articles explaining the different types of load
 robots: NOINDEX, FOLLOW
 ---
 
-A series of articles explaining the different [load test types](/test-types/load-test-types/).
+A series of articles explaining the different [load test types](https://grafana.com/load-testing/types-of-load-testing/).
